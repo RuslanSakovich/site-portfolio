@@ -37,7 +37,7 @@ body {
 
 .page-header .user-info {
   display: flex;
-  
+
 }
 
 .page-header img {
@@ -173,6 +173,10 @@ body {
 
 .portfolio {
   margin: 0 0 120px;
+}
+
+.work-link img {
+  object-fit: contain;
 }
 
 .projects {
