@@ -11,16 +11,27 @@ body {
   line-height: 32px;
   color: #222222;
   background-color: #f2f4f6;
-  background-image: url("../img/hero-bg.jpg");
+  background-image: url("../img/bg/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: local;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+}
+
+a {
+text-decoration: none;
+}
+
 .container {
-  max-width: 928px;
+  max-width: 1408px;
   margin: 0 auto;
   padding: 0 16px;
+  outline: 1px solid green;
 }
 
 .user-info {
@@ -30,14 +41,13 @@ body {
 }
 
 .page-header .container,
-.page-footer .container {
+.page-footer .container { 
   max-width: 1408px;
   text-align: right;
 }
 
 .page-header .user-info {
   display: flex;
-
 }
 
 .page-header img {
@@ -62,7 +72,10 @@ body {
   padding-left: 25px;
   background-image: url("img/icon-phone-header.svg");
 }
+/* /.page-header */
 
+
+/*  section hero-image */
 .hero-image {
   margin-bottom: 620px;
 }
@@ -85,7 +98,58 @@ body {
   font-size: 32px;
   line-height: 48px;
 }
+/* /.hero-image */
 
+
+/* section portfolio */
+.portfolio {
+  margin: 0 0 120px;
+}
+
+.work-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  text-align: center;
+  margin-bottom: 40px;
+  /* width: 45%; */
+  box-shadow: 0px 0px 15px  rgba(0, 0, 0, 0.7);
+
+}
+
+.work-item:hover {
+  box-shadow: 0px 0px 15px  rgba(0, 0, 0, 0.4);
+}
+
+.work-link img {
+  object-fit: contain;
+}
+
+.projects {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects li {
+  margin: 0 0 80px;
+}
+
+.project-image {
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.projects p {
+  margin: 0 0 24px;
+}
+/* /.portfolio */
+
+
+/* section intro "Давайте познакомимся" */
 .intro {
   margin: 0 0 120px;
 }
@@ -112,6 +176,8 @@ body {
   line-height: 40px;
   font-weight: 500;
 }
+
+
 
 .intro p {
   margin: 0 0 32px;
@@ -171,32 +237,6 @@ body {
   border-radius: 6px;
 }
 
-.portfolio {
-  margin: 0 0 120px;
-}
-
-.work-link img {
-  object-fit: contain;
-}
-
-.projects {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.projects li {
-  margin: 0 0 80px;
-}
-
-.project-image {
-  margin: 0 0 24px;
-  text-align: center;
-}
-
-.projects p {
-  margin: 0 0 24px;
-}
 
 .button {
   padding: 6px 20px;
