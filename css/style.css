@@ -11,10 +11,7 @@ body {
   line-height: 32px;
   color: #222222;
   background-color: #f2f4f6;
-  background-image: url("../img/bg/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: local;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,1) -5%, rgba(191,222,231,1) 49%);
 }
 
 ul {
@@ -48,6 +45,25 @@ text-decoration: none;
 
 .page-header .user-info {
   display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  
+}
+
+.heading {
+  margin: 0 0 16px;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-size: 46px;
+  line-height: 58px;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.hero-image p {
+  margin: 0;
+  font-size: 32px;
+  line-height: 48px;
 }
 
 .page-header img {
@@ -65,42 +81,16 @@ text-decoration: none;
 
 .header-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
+  background-image: url("../img/decoration/icon-email-header.svg");
 }
 
 .header-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
+  background-image: url("../img/decoration/icon-phone-header.svg");
 }
 /* /.page-header */
 
-
-/*  section hero-image */
-.hero-image {
-  margin-bottom: 620px;
-}
-
-.hero-image .container {
-  max-width: 1408px;
-  text-align: center;
-}
-
-.heading {
-  margin: 0 0 16px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 88px;
-  line-height: 96px;
-  font-weight: 400;
-}
-
-.hero-image p {
-  margin: 0;
-  font-size: 32px;
-  line-height: 48px;
-}
-/* /.hero-image */
-
-
+/* .page-header */
 /* section portfolio */
 .portfolio {
   margin: 0 0 120px;
@@ -131,7 +121,6 @@ text-decoration: none;
   text-align: center;
   vertical-align: middle;
   background-color: #eeeeee;
-  opacity: 0.9;
 }
 
 .work-item p {
