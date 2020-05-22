@@ -21,58 +21,70 @@ ul {
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
   max-width: 1408px;
   margin: 0 auto;
   padding: 0 16px;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
-.user-info {
-  display: flex;
-  margin: 0 0 160px;
-  padding: 32px 0 32px;
+/* header */
+.page-header {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-.page-header .container,
-.page-footer .container { 
-  max-width: 1408px;
-  text-align: right;
-}
-
-.page-header .user-info {
+.main-navigation {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  
+  align-items: аду
+  ;
+  flex-basis: 33.33%;
+  flex-wrap: wrap;
+}
+
+.logo .title-link {
+  margin: 0;
+  padding: 0;
 }
 
 .heading {
-  margin: 0 0 16px;
+  margin: 16px 16px;
   font-family: "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 46px;
   line-height: 58px;
   font-weight: bold;
   text-align: left;
   vertical-align: middle;
+  color: #288be6;
 }
 
-.hero-image p {
+.promo {
   margin: 0;
-  font-size: 32px;
-  line-height: 48px;
+  padding: 0;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 500;
+  text-align: center;
+  color: #657794;
 }
 
-.page-header img {
-  border-radius: 50% 50% 50% 50%;
-  object-fit: cover;
+.user-contacts {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-.page-header a {
-  margin-left: 56px;
+.user-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-navigation a {
+  /* margin-left: 56px; */
+  font-weight: 700;
   color: #288be6;
   text-decoration: none;
   background-repeat: no-repeat;
@@ -88,9 +100,19 @@ text-decoration: none;
   padding-left: 25px;
   background-image: url("../img/decoration/icon-phone-header.svg");
 }
+
+.user-photo {
+  text-align: center;
+}
+
+.user-photo img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 /* /.page-header */
 
-/* .page-header */
+
 /* section portfolio */
 .portfolio {
   margin: 0 0 120px;
