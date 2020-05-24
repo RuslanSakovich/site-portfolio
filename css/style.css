@@ -315,7 +315,7 @@ a {
     width: auto;
     padding: 0 16px;
   }
-  .main-navigation > div {
+  .main-navigation div {
     flex-basis: 100%;
   }
   .work-item {
