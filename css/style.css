@@ -309,7 +309,7 @@ a {
 }
 
 
-@media  (max-width: 576px) {
+@media  (min-width: 100px) {
   .container {
     width: 95%;
     padding: 0 16px;
