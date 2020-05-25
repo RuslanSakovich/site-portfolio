@@ -310,7 +310,7 @@ a {
 }
 
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .container {
     width: auto;
     padding: 0 16px;
