@@ -44,7 +44,7 @@ a {
   ;
   flex-basis: 33.33%;
   flex-wrap: wrap;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 .logo .title-link {
@@ -84,7 +84,6 @@ a {
 }
 
 .user-navigation a {
-  /* margin-left: 56px; */
   font-weight: 700;
   color: #288be6;
   text-decoration: none;
