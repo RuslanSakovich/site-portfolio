@@ -25,7 +25,7 @@ a {
 }
 
 .container {
-  max-width: 1408px;
+  /* max-width: 1408px; */
   margin: 0 auto;
   padding: 0 16px;
   /* outline: 1px solid green; */
@@ -44,6 +44,7 @@ a {
   ;
   flex-basis: 33.33%;
   flex-wrap: wrap;
+  outline: 1px solid green;
 }
 
 .logo .title-link {
@@ -239,18 +240,18 @@ a {
 }
 
 .skill-html {
-  background-image: url("../img/icon-html.svg");
+  background-image: url("../img/decoration/icon-html.svg");
 }
 
 .skill-css {
-  background-image: url("../img/icon-css.svg");
+  background-image: url("../img/decoration/icon-css.svg");
 }
 
 .skill-js {
   width: 30px;
   height: 30px;
   object-fit: cover;
-  background-image: url("../img/js-icon.svg");
+  background-image: url("../img/decoration/JS-icon.svg");
   
 }
 
@@ -308,37 +309,9 @@ a {
 }
 
 
-@media all and (max-width: 576px) {
-  header  {
-    margin-top: 10px;
+/* @media all and (max-width: 576px) {
+  .page-header {
+    width: 320px;
   }
-  .container {
-    max-width: 100vw;
-    margin: 0;
-  }
-  .main-navigation {
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-  .heading {
-    margin: 0;
-    margin-top: 15px;
-  }
-  .user-photo {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .promo {
-    align-self: center;
-  }
-  .user-navigation {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .user-contacts {
-    width: 93vw;
-  }
-}
+
+} */
