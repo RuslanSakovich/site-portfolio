@@ -4,8 +4,8 @@
 
 body {
   padding: 0;
-  margin: 0;
-  min-width: 960px;
+  margin: 0 auto;
+  max-width: 960px;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
@@ -25,10 +25,10 @@ a {
 }
 
 .container {
-  /* max-width: 1408px; */
+  max-width: 1408px;
   margin: 0 auto;
   padding: 0 16px;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 /* header */
@@ -109,13 +109,11 @@ a {
   border-radius: 50%;
   object-fit: cover;
 }
-
 /* /.page-header */
-
 
 /* section portfolio */
 .portfolio {
-  margin: 0 0 120px;
+  margin: 0 0 120px 0;
 }
 
 .work-list {
@@ -308,9 +306,58 @@ a {
 }
 
 
-/* @media all and (max-width: 576px) {
-  .page-header {
-    width: 320px;
+@media (max-width: 576px) {
+  body {
+    width: 100vw;
+  }
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+
+    outline: 1px solid green;
   }
 
-} */
+  .portfolio .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 90vw;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio .work-list {
+    width: 90vw;
+    justify-content: space-around;
+  }
+
+  .intro .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 90vw;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+ 
+  .page-footer .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 90vw;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .page-footer .container a {
+    display: block;
+  }
+}
