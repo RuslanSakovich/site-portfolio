@@ -28,7 +28,7 @@ a {
   max-width: 1408px;
   margin: 0 auto;
   padding: 0 16px;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 /* header */
@@ -38,6 +38,7 @@ a {
 }
 
 .main-navigation {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start
@@ -315,10 +316,29 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
-    outline: 1px solid green;
   }
-  .portfolio .container {
+  .main-navigation {
+    position: relative;
+    margin-bottom: 7%;
+  }
+  .heading {
+    margin: 0;
+    padding-top: 30%;
+    font-size: 2.2em;
+    line-height: 100%;
+  }
+ .user-photo {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 120px;
+  height: 120px;
+ }
+ .user-photo img {
+   width: 120px;
+   height: 120px;
+ }
+ .portfolio .container {
     margin: 0 auto;
     padding: 0 5%;
     width: 100%;
