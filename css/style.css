@@ -66,7 +66,7 @@ a {
 }
 
 .promo {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-size: 40px;
   line-height: 46px;
@@ -111,11 +111,18 @@ a {
   border-radius: 50%;
   object-fit: cover;
 }
+.user-photo:hover img {
+  transform: scale(1.3);
+  transition-duration: 0.5s;
+}
+.user-photo:not(:hover) img {
+  transition-duration: 2.0s;
+}
 /* /.page-header */
 
 /* section portfolio */
 .portfolio {
-  margin: 0 0 120px 0;
+  margin: 0 0 20px 0;
 }
 
 .work-list {
@@ -166,7 +173,6 @@ a {
   display: block;
 }
 
-
 .work-link img {
   object-fit: contain;
 }
@@ -191,14 +197,13 @@ a {
 }
 /* /.portfolio */
 
-
 /* section intro "Давайте познакомимся" */
 .intro {
   margin: 0 0 120px;
 }
 
 .subheading {
-  margin: 0 0 56px;
+  margin: 0 0 30px;
   font-family: "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 64px;
   line-height: 80px;
@@ -214,16 +219,22 @@ a {
 
 .intro h3,
 .portfolio h3 {
-  margin: 0 0 12px;
+  margin: 0 0 20px;
   font-size: 28px;
   line-height: 40px;
   font-weight: 500;
 }
 
-
-
 .intro p {
-  margin: 0 0 32px;
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: justify;
+  text-indent: 54px;
+}
+
+.intro p:last-child {
+  margin-bottom: 50px;
 }
 
 .skills {
@@ -274,7 +285,7 @@ a {
 }
 
 .level div {
-  margin: 1px;
+  margin: 0px;
   height: 12px;
   background-color: #288be6;
   border-radius: 6px;
@@ -307,28 +318,28 @@ a {
 
 .footer-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-footer.svg");
+  background-image: url("../img/decoration/icon-email-footer.svg");
 }
 
 .footer-phone {
   padding-left: 25px;
-  background-image: url("../img/icon-phone-footer.svg");
+  background-image: url("../img/decoration/icon-phone-footer.svg");
 }
 
-/* @media (max-width: 992px) {
-  body {
-    width: 100%;
+@media (max-width: 992px) {
+  .main-navigation {
+    flex-wrap: nowrap;
   }
-  .container {
-    padding: 0 5%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  .heading {
+    font-size: 30px;
+    line-height: 40px;
   }
-} */
-
-
+   .promo {
+    font-size: 29px;
+    line-height: 34px;
+    font-weight: 500;
+  }
+}
 @media (max-width: 576px) {
   body {
     width: 100%;
@@ -343,12 +354,20 @@ a {
   .main-navigation {
     position: relative;
     margin-bottom: 7%;
+    flex-direction: column;
+    flex-basis: auto;
+    flex: 1;
   }
   .heading {
     margin: 0;
     padding-top: 30%;
     font-size: 2.2em;
     line-height: 100%;
+  }
+  .promo {
+    font-size: 29px;
+    line-height: 34px;
+    font-weight: 500;
   }
  .user-photo {
   position: absolute;
