@@ -26,6 +26,7 @@ a {
 
 .container {
   max-width: 1408px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 16px;
   /* outline: 1px solid green; */
@@ -128,6 +129,7 @@ a {
   text-align: center;
   margin-bottom: 40px;
   width: 400px;
+  color: #222222;
   background: rgb(235,235,235);
   background: linear-gradient(to bottom, rgba(235,235,235,1) 44%, rgba(255,255,255,1) 100%);
   box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.3);
@@ -139,9 +141,17 @@ a {
   left: 50px;
   width: 300px;
   min-height: 237px;
+  padding-top: 30px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: bold;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   text-align: center;
   vertical-align: middle;
+  color: #222222;
   background-color: #eeeeee;
+  box-shadow: 0 0 5px  rgba(0, 0, 0, 0.3);
 }
 
 .work-item p {
@@ -304,6 +314,19 @@ a {
   padding-left: 25px;
   background-image: url("../img/icon-phone-footer.svg");
 }
+
+/* @media (max-width: 992px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    padding: 0 5%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+} */
 
 
 @media (max-width: 576px) {
