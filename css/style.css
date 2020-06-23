@@ -271,7 +271,13 @@ a {
   height: 30px;
   object-fit: cover;
   background-image: url("../img/decoration/JS-icon.svg");
-  
+}
+
+.skill-git {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  background-image: url("../img/decoration/icon-git.svg");
 }
 
 .level {
